@@ -1,5 +1,5 @@
 <template>
-  <v-app dark>
+  <v-app light>
     <v-navigation-drawer
       v-model="drawer"
       :mini-variant="miniVariant"
@@ -56,7 +56,7 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-footer :absolute="!fixed" app>
+    <v-footer :absolute="fixed" app>
       <span>&copy; {{ new Date().getFullYear() }} Kamuykaru</span>
     </v-footer>
   </v-app>
@@ -72,7 +72,7 @@ export default {
       items: [
         {
           icon: 'mdi-apps',
-          title: 'Welcome',
+          title: '奨学金一覧',
           to: '/',
         },
         {

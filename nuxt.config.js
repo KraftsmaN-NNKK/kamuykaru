@@ -91,4 +91,7 @@ export default {
    ** See https://nuxtjs.org/api/configuration-build/
    */
   build: {},
+  privateRuntimeConfig: {
+    gsaoAuthClientSecret: process.env.GSA_OAUTH_CLIENT_SECRET,
+  },
 }
